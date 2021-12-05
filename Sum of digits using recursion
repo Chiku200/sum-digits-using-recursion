@@ -1,0 +1,16 @@
+int getSum(int n)
+{
+	if(n==0)
+		return 0;
+	else
+		return n%10+getSum(n/10);
+}
+int main()
+{
+	int n,sum;
+	printf("Enter a number : ");
+	scanf("%d",&n);
+	sum=getSum(n);
+	printf("\nSum of digits of %d is %d",n,sum);
+	return 0;
+}
